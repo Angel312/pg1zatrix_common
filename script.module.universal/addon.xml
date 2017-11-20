@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="script.module.universal"
+       name="Universal - An Addons Toolkit"
+       version="3.0.0"
+       provider-name="the-one">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="0.0.1"/>
+  </requires>
+  <extension library="default.py" point="xbmc.service"  start="startup"/>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Universal - An Addons Toolkit</summary>
+    <description lang="en">Collection of common functionality for addons.</description>
+    <platform>all</platform>
+	<language></language>
+	<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+	<forum>http://www.xunitytalk.com/</forum>
+	<website>https://github.com/the-one-/script.module.universal/wiki</website>
+	<source>https://github.com/the-one-/script.module.universal</source>
+	<email>xs2the1[at]gmail[dot]com</email>
+  </extension>
+</addon>
+
+<addon id="service.subtitles.opensubtitles"
+       name="OpenSubtitles.org"
+       version="5.0.14"
+       provider-name="amet">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.subtitle.module"
+             library="service.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">OpenSubtitles</summary>
+    <description lang="en">Search and download subtitles from opensubtitles.org</description>
+    <description lang="zh">? opensubtitles.org ???????</description>
+    <disclaimer lang="en"></disclaimer>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.xbmc.org/showthread.php?tid=183114</forum>
+    <website></website>
+    <email></email>
+    <source>https://github.com/amet/service.subtitles.opensubtitles</source>
+  </extension>
+</addon>
