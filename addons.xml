@@ -29,6 +29,16 @@
   </extension>
 </addon>
 
+<addon id="script.module.cryptopy" name="CryptoPy" version="1.2.6" provider-name="cryptopy.sourceforge.net">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="script.module.dandyscrapers" name="Dandy Scrapers" version="17.11.15" provider-name="DandyMedia">
         <requires>
                 <import addon="xbmc.python" version="2.1.0"/>
@@ -383,7 +393,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="4.0.12" provider-name="Eldorado, tknorris">
+<addon id="script.module.urlresolver" name="URLResolver" version="4.0.12A" provider-name="Eldorado, tknorris, jsergio">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />
@@ -396,6 +406,7 @@
 		<platform>all</platform>
 		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
 		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+        <source>https://github.com/jsergio123/script.module.urlresolver</source>
 	</extension>
 </addon>
 
