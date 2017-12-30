@@ -146,7 +146,7 @@
 
 <addon id="script.module.liveresolver"
      name="LiveResolver"
-     version="0.1.48"
+     version="0.1.50"
      provider-name="natko1412">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -193,8 +193,8 @@
 
 <addon id="script.module.metahandler"
      name="metahandler"
-     version="2.9.1"
-     provider-name="Eldorado">
+     version="3.0.2"
+     provider-name="Eldorado, jsergio">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.simplejson" version="3.3.0"/>
