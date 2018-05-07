@@ -63,28 +63,6 @@
   </extension>
 </addon>
 
-<addon id="script.module.certifi"
-       name="certifi"
-       version="2017.07.27.1"
-       provider-name="Kenneth Reitz">
-  <requires>
-    <import addon="xbmc.python" version="2.25.0"/>
-  </requires>
-  <extension point="xbmc.python.module"
-             library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">Python SSL Certificates</summary>
-    <description lang="en_GB">Packed for KODI from https://github.com/certifi/python-certifi</description>
-    <platform>all</platform>
-    <language></language>
-    <license>MPL-2.0</license>
-    <forum></forum>
-    <website>https://github.com/certifi/python-certifi</website>
-    <source>https://github.com/beenje/script.module.certifi</source>
-    <email>beenje AT gmail.com</email>
-  </extension>
-</addon>
-
 <addon id="script.module.chardet"
        name="chardet"
        version="3.0.4"
@@ -250,28 +228,6 @@
     <license>MIT</license>
     <source>https://github.com/html5lib/html5lib-python.git</source>
     <website>https://github.com/html5lib/html5lib-python</website>
-  </extension>
-</addon>
-
-<addon id="script.module.idna"
-       name="idna"
-       version="2.6"
-       provider-name="Kim Davies">
-  <requires>
-    <import addon="xbmc.python" version="2.25.0"/>
-  </requires>
-  <extension point="xbmc.python.module"
-             library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">Internationalized Domain Names for Python</summary>
-    <description lang="en_GB">Packed for KODI from https://github.com/kjd/idna</description>
-    <platform>all</platform>
-    <language></language>
-    <license>BSD</license>
-    <forum></forum>
-    <website>https://github.com/kjd/idna</website>
-    <source>https://github.com/beenje/script.module.idna</source>
-    <email>beenje AT gmail.com</email>
   </extension>
 </addon>
 
@@ -494,32 +450,6 @@
     </extension>
 </addon>
 
-<addon id="script.module.requests"
-       name="requests"
-       version="2.18.4"
-       provider-name="kennethreitz">
-  <requires>
-    <import addon="xbmc.python" version="2.25.0"/>
-    <import addon="script.module.urllib3" version="1.22"/>
-    <import addon="script.module.chardet" version="3.0.4"/>
-    <import addon="script.module.idna" version="2.6"/>
-    <import addon="script.module.certifi" version="2017.07.27.1"/>
-  </requires>
-  <extension point="xbmc.python.module"
-             library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">Python HTTP for Humans</summary>
-    <description lang="en_GB">Packed for KODI from https://github.com/requests/requests</description>
-    <platform>all</platform>
-    <language></language>
-    <license>Apache2</license>
-    <forum></forum>
-    <website>http://python-requests.org</website>
-    <source>https://github.com/beenje/script.module.requests</source>
-    <email>beenje AT gmail.com</email>
-  </extension>
-</addon>
-
 <addon id="script.module.resolveurl" name="ResolveURL" version="5.0.09" provider-name="jsergio">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
@@ -565,24 +495,6 @@
         <source>https://github.com/marcelveldt/script.module.simplecache</source>
         <platform>all</platform>
     </extension>
-</addon>
-
-<addon id="script.module.simplejson" name="simplejson" version="3.4.1" provider-name="Bob Ippolito">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-		<import addon="script.module.python.requests" version="2.16.0" />
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<language></language>
-		<summary lang="en">Simple, fast, extensible JSON encoder/decoder for Python</summary>
-		<description lang="en">Simple, fast, extensible JSON encoder/decoder for Python</description>
-		<disclaimer lang="en">Code taken from https://pypi.python.org/pypi/simplejson/</disclaimer>
-		<license>MIT License, Academic Free License v. 2.1</license>
-		<website>https://pypi.python.org/pypi/simplejson/</website>
-		<source>https://pypi.python.org/pypi/simplejson/</source>
-	</extension>
 </addon>
 
 <addon id="script.module.six"
@@ -733,28 +645,6 @@
 	<website>https://github.com/the-one-/script.module.universal/wiki</website>
 	<source>https://github.com/the-one-/script.module.universal</source>
 	<email>xs2the1[at]gmail[dot]com</email>
-  </extension>
-</addon>
-
-<addon id="script.module.urllib3"
-       name="urllib3"
-       version="1.22"
-       provider-name="shazow">
-  <requires>
-    <import addon="xbmc.python" version="2.25.0"/>
-  </requires>
-  <extension point="xbmc.python.module"
-             library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">urllib3 is a powerful, sanity-friendly HTTP client for Python</summary>
-    <description lang="en_GB">Packed for KODI from https://github.com/shazow/urllib3</description>
-    <platform>all</platform>
-    <language></language>
-    <license>MIT</license>
-    <forum></forum>
-    <website>https://urllib3.readthedocs.io/en/latest/</website>
-    <source>https://github.com/beenje/script.module.urllib3</source>
-    <email>beenje AT gmail.com</email>
   </extension>
 </addon>
 
