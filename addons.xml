@@ -220,7 +220,7 @@
 
 <addon id="script.module.liveresolver"
      name="LiveResolver"
-     version="0.1.50"
+     version="0.1.50A"
      provider-name="natko1412">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
