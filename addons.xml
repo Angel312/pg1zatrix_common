@@ -525,12 +525,34 @@ level.</description>
   </extension>
 </addon>
 
-<addon id="script.module.streamlink.base" name="Streamlink Library" version="2018.12.05" provider-name="Streamlink Devs, Twilight0">
+<addon id="script.module.slproxy" name="SLProxy" version="0.0.5" provider-name="devilsport">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
-    <import addon="script.module.requests" version="2.12.4"/>
+    <import addon="script.module.requests"/>
+	  <import addon="script.module.streamlink.base" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib/"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>StreamLink Proxy DS</summary>
+    <description>Streamlink proxy for Kodi</description>
+    <platform>all</platform>
+    <license>Simplified BSD</license>
+    <source></source>
+    <language>en</language>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+    <news>
+    </news>
+  </extension>
+</addon>
+
+<addon id="script.module.streamlink.base" name="Streamlink Library" version="2019.03.17" provider-name="Streamlink Devs, Twilight0">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.requests" version="2.3.0"/>
     <import addon="script.module.futures" version="2.2.0"/>
-    <import addon="script.module.streamlink.crypto" version="1.4.0"/>
+    <import addon="script.module.streamlink.crypto" version="1.5.0"/>
   </requires>
   <extension point="xbmc.python.module" library="resources/lib/"/>
   <extension point="xbmc.addon.metadata">
@@ -543,16 +565,20 @@ level.</description>
     <assets>
         <icon>icon.png</icon>
     </assets>
-    <news>+ 2018.12.05
-- Corrected icon asset location, ensuring backwards compatibility
+    <news>+ 2019.03.17
+- Fixed icon
+- Updated changelog.txt
+- Moved and updated six module into utils directory
 
-+ 2018.12.04
-- Rebase to latest upstream commit b99249e941852341b06b267ffc1ca1d144c6b718
-- New icon</news>
++ 2019.03.16
+- Updated to latest upstream commit e96c725cb553027dd1ca7b1c278211b57947b05c
+
++ 2018.12.05
+- Corrected icon asset location, ensuring backwards compatibility</news>
   </extension>
 </addon>
 
-<addon id="script.module.streamlink.crypto" name="streamlink.crypto" version="1.4.0" provider-name="Streamlink.crypto">
+<addon id="script.module.streamlink.crypto" name="streamlink.crypto" version="1.5.0" provider-name="Streamlink.crypto">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
   </requires>
