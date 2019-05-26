@@ -571,7 +571,7 @@ level.</description>
   </extension>
 </addon>
 
-<addon id="script.module.streamlink.base" name="Streamlink Library" version="2019.03.17" provider-name="Streamlink Devs, Twilight0">
+<addon id="script.module.streamlink.base" name="Streamlink Library" version="2019.05.08" provider-name="Streamlink Devs, Twilight0">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.module.requests" version="2.3.0"/>
@@ -580,25 +580,22 @@ level.</description>
   </requires>
   <extension point="xbmc.python.module" library="resources/lib/"/>
   <extension point="xbmc.addon.metadata">
-    <summary>Streamlink Library</summary>
-    <description>Streamlink Library for Kodi</description>
-    <platform>all</platform>
-    <license>Simplified BSD</license>
-    <source>https://github.com/Twilight0/script.module.streamlink.base/</source>
-    <language>en</language>
-    <assets>
-        <icon>icon.png</icon>
-    </assets>
-    <news>+ 2019.03.17
-- Fixed icon
-- Updated changelog.txt
-- Moved and updated six module into utils directory
+      <summary>Streamlink Library</summary>
+      <description>Streamlink Library for Kodi. Known issue: Does not work on Xbox, when trying to import something from ctypes module.</description>
+      <platform>all</platform>
+      <license>Simplified BSD</license>
+      <source>https://github.com/Twilight0/script.module.streamlink.base/</source>
+      <language>en</language>
+      <assets>
+          <icon>icon.png</icon>
+      </assets>
+      <news>+2019.05.08
+- Added vimeo plugin
 
-+ 2019.03.16
-- Updated to latest upstream commit e96c725cb553027dd1ca7b1c278211b57947b05c
-
-+ 2018.12.05
-- Corrected icon asset location, ensuring backwards compatibility</news>
++2019.05.03
+- Bumped to upstream commit c8ed1daff14ac03195870238b9b900c1109dd5c1
+- Include PR #2441 from upstream
+- Add exception for ctypes on namedpipe for XBOX (MemoryError). So its a known issue that streamlink does not work on this platform</news>
   </extension>
 </addon>
 
@@ -734,6 +731,34 @@ level.</description>
     </extension>
 </addon>
 
+<addon id="service.streamlink.proxy" name="Streamlink Proxy" version="4.1.2" provider-name="Twilight0">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+        <import addon="script.module.streamlink.base" version="2018.06.12"/>
+        <!--<import addon="script.module.streamlink.plugins" version="1.0.3"/>-->
+    </requires>
+    <extension point="xbmc.service" library="resources/lib/service.py" start="login"/>
+    <extension point="xbmc.python.pluginsource" library="options.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <language>en de el</language>
+        <summary>Streamlink Proxy</summary>
+        <description>Streamlink Proxy for Kodi</description>
+        <platform>all</platform>
+        <license>GPLv3</license>
+        <source>https://github.com/Twilight0/service.streamlink.proxy</source>
+        <size>172839</size>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+        <news>+ 4.1.2
+- Removed plugins dependency
+- Bumped base module dependency to latest</news>
+    </extension>
+</addon>
+
 <addon id="service.subtitles.addic7ed"
        name="Addic7ed.com"
        version="5.0.1"
@@ -786,5 +811,29 @@ level.</description>
 	</assets>
     <source>https://github.com/opensubtitles/service.subtitles.opensubtitles_by_opensubtitles</source>
   </extension>
+</addon>
+
+<addon id="service.subtitles.subscene"
+       name="Subscene.com"
+       version="1.7.2.7"
+       provider-name="CrowleyAJ, thuongtin.com">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.subtitle.module"
+               library="service.py"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Get subtitles from Subscene.com</summary>
+        <description lang="en">Subscene.com provides subtitles in more than 50 languages, mainly in English, Arabic, Brazilian Portuguese, Farsi, Indonesian and Vietnamese.
+Other languages with a great number of subtitles are: Danish, French, Swedish, Dutch, Italian, Norwegian and Spanish.</description>
+        <disclaimer lang="en"/>
+        <platform>all</platform>
+        <language/>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <forum>http://forum.xbmc.org/showthread.php?tid=184854</forum>
+        <website/>
+        <email/>
+        <source>https://github.com/manacker/service.subtitles.subscene</source>
+    </extension>
 </addon>
 </addons>
