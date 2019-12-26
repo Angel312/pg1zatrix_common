@@ -815,8 +815,8 @@ level.</description>
 
 <addon id="service.subtitles.subscene"
        name="Subscene.com"
-       version="1.7.2.7"
-       provider-name="CrowleyAJ, thuongtin.com">
+       version="1.8.0"
+       provider-name="jarmo">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
     </requires>
@@ -833,7 +833,7 @@ Other languages with a great number of subtitles are: Danish, French, Swedish, D
         <forum>http://forum.xbmc.org/showthread.php?tid=184854</forum>
         <website/>
         <email/>
-        <source>https://github.com/manacker/service.subtitles.subscene</source>
+        <source>https://github.com/jarmo/service.subtitles.subscene</source>
     </extension>
 </addon>
 </addons>
