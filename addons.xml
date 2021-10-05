@@ -540,23 +540,6 @@ level.</description>
   </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.46" provider-name="jsergio, gujal">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0" />
-        <import addon="plugin.video.youtube" optional="true" />
-        <import addon="script.module.python.twitch" optional="true" />
-        <import addon="script.module.cryptopy" version="1.2.6" optional="true" />
-        <import addon="plugin.video.gdrive" optional="true" />
-    </requires>
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.python.pluginsource" library="lib/default.py" />
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
-        <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
-    </extension>
-</addon>
-
 <addon id="script.module.schism.common" name="Elysium Common Libraries" version="2017.06.08" provider-name="Elysium">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
@@ -627,6 +610,25 @@ level.</description>
     <news>
     </news>
   </extension>
+</addon>
+
+<addon id="script.module.soupsieve" name="Soup Sieve" version="1.9.6+leia.1" provider-name="Isaac Muse">
+	<requires>
+		<import addon="xbmc.python" version="2.26.0"/>
+		<import addon="script.module.backports.functools_lru_cache" version="1.6.1"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib/" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">A CSS selector library</summary>
+		<description lang="en_GB">Soup Sieve is a CSS selector library designed to be used with Beautiful Soup 4. It aims to provide selecting, matching, and filtering using modern CSS selectors.</description>
+		<license>MIT</license>
+		<platform>all</platform>
+		<website>https://pypi.org/project/soupsieve/</website>
+		<source>https://github.com/facelessuser/soupsieve</source>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
 </addon>
 
 <addon id="script.module.streamlink.base" name="Streamlink Library" version="2019.05.08" provider-name="Streamlink Devs, Twilight0">
